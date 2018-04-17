@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>reservation</title>
+	</head>
+	<body>
+		<img src="https://www.mercaditorestaurants.com/wp-content/uploads/2016/08/reservations.png"> <br />
+		<form action="action.php" method="post">
+			<p>성함 : <input type="text" name="name" /></p>
+			<p>연락처 : <input type="text" name="phone" /></p>
+			<p>이용 날짜 : <input type="date" name="depart" /></p>
+			<fieldset style="width=30">
+				<legend>추가기입</legend>
+			<p>방문시간:
+				<br />
+				<input type="radio" name="genre" value="오전(10:00)" checked="checked" /> 오전(10:00)
+				<input type="radio" name="genre" value="오후(12:00)" /> 오후(12:00)
+				<input type="radio" name="genre" value="저녁(18:00)" /> 저녁(18:00)
+			</p>
+			<p>사전 확인 사항:
+				<br />
+				<input type="checkbox" name="service[]" value="비흡연석" checked="checked" /> 비흡연석
+				<input type="checkbox" name="service[]" value="창가쪽" /> 창가쪽
+				<input type="checkbox" name="service[]" value="주차 이용" /> 주차 이용
+			</p>
+			<p>선호하는 쉐프 : </p>
+			<select name="chef">
+				<option value="똠얌꿍"> 똠얌꿍 쉐프</option>
+				<option value="가나다"> 가나다 쉐프</option>
+				<option value="파게티"> 파게티 쉐프</option>
+				</select>
+			</fieldset>
+			<input type="submit" value="예약합니다.">
+		</form>
+	</body>
+</html>
